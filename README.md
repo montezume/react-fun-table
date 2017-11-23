@@ -1,5 +1,5 @@
 # react-fun-table
-A a reusable react data grid component made with styled-components. By default, the table header and the first column is sticky.
+A a reusable react data grid component made with styled-components. By default, the table header and the first column is sticky (using css). You must install styled-components as a dependancy in order to use this package!
 
 ```js
 <Table
@@ -8,6 +8,10 @@ A a reusable react data grid component made with styled-components. By default, 
     sortBy={columns[0].attribute
 />
 ```
+
+<p align="center">
+<img src="https://i.imgur.com/GOJlrgC.png">
+</p>
 
 ## Installation
 
@@ -87,6 +91,7 @@ const columns = [
 const App = () => (
     <div className="App">
         <Table
+	        accessor="attribute" // default
             columns={columns}
             data={data}
             numStickyColumns={1} // default
