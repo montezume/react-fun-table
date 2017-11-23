@@ -1,6 +1,6 @@
 {
   "name": "react-fun-table",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reusable react data table component",
   "main": "build/index.js",
   "repository": {
@@ -14,7 +14,7 @@
     "lint:watch": "esw -w lib/**",
     "prepublish": "npm run build",
     "test": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage --no-cache"
   },
   "keywords": [],
   "author": "Malcolm laing <malcolmclaing@gmail.com>(https://github.com/montezume)",
@@ -57,7 +57,7 @@
       "<rootDir>/node_modules/enzyme-to-json/serializer"
     ],
     "testPathIgnorePatterns": [
-      "<rootDir>/(commonjs|coverage|flow-typed|node_modules|tools|umd)/"
+      "<rootDir>/(commonjs|coverage|build|flow-typed|node_modules|tools|umd)/"
     ]
   }
 }
