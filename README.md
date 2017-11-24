@@ -15,6 +15,10 @@ A a reusable react data grid component made with styled-components. By default, 
 <img src="https://i.imgur.com/GOJlrgC.png">
 </p>
 
+## Sorting
+
+By default sorting is done by the first column, ascending. You can click on a column header to sort by that column. Right now, sorting is only by string and doesn't work with numbers properly. TODO: // add integer / double sorting.
+
 
 ## Installation
 
@@ -95,12 +99,12 @@ const App = () => (
     <div className="App">
         <Table
 	        accessor="attribute" // default
-            columns={columns}
-            data={data}
-            numStickyColumns={1} // default
-            sortDescending={false} // default
-            sortBy={columns[0].attribute}
-            stickyHeader // default
+          columns={columns}
+          data={data}
+          numStickyColumns={1} // default
+          sortDescending={false} // default
+          sortBy={columns[0].attribute}
+          stickyHeader // default
         />
 );
 
