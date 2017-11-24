@@ -1,7 +1,7 @@
 # react-fun-table
-A a reusable react data grid component made with styled-components. By default, the table header and the first column is sticky (using css). You must install styled-components in order to use this package! Instructions are below.
+A a reusable react data grid component made with styled-components. By default, the table header and the first column is sticky (using css). You must install styled-components in order to use this package! Instructions are below.g
 
-####Check out the [example](https://montezume.github.io/react-fun-table-example/).
+##### Check out the [example](https://montezume.github.io/react-fun-table-example/).
 
 ```js
 <Table
